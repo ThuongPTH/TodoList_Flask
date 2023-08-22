@@ -11,8 +11,7 @@ data_user = Function.get_data_user()
 def login():
     if request.method == 'GET':
         forgot = request.args.get('forgot')
-        print(forgot)
-        if forgot==1: return redirect(url_for('chang_pass'))
+        if forgot=='1': return redirect(url_for('change_pass'))
         else: return render_template('login.html') # render file login.html
     else:
         user = request.form['username']
