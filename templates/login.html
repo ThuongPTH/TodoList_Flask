@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login to Todo List App</title>
+</head>
+<body>
+
+<div id="login-form">
+  <h2>Login to Todo List</h2>
+  <form id="login" action="#" method="post">
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username"><br>
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password"><br>
+    <button type="submit">Login</button><br>
+    <!-- {% for x in range(10) %}
+      {% if x % 2 == 0 %}
+        <h2>{{x}}</h2>
+      {% endif %}
+    {% endfor %} !-->
+  </form>
+  <form method="get" action="/login">
+    <button type="submit" name="forgot" value="1">Forgot password</button>
+  </form>
+</div>
+
+</body>
+</html>
